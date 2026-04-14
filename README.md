@@ -5,6 +5,8 @@ made using Godot 4, runs on windows
 
 (Using Godot for a simple timer program is overkill, I am just trying to explore what I can do with it :) )
 
+<img width="397" height="458" alt="Image of Timer UI" src="https://github.com/user-attachments/assets/62b0a644-1a0a-4630-85b1-d1b3eb1b839d" />
+
 ## Download/Install
 Downlad the .zip file from the main release, extract it and run the .exe
 ## Features
