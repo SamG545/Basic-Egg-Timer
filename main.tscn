@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://csske04xpso53"]
+
+[ext_resource type="Script" uid="uid://cfg1csg8qig38" path="res://Main.cs" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://dbmt3lljhiwh7" path="res://assests/Timer_Background.png" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://ch2qxl73ondk1" path="res://assests/Start_Button.png" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://dx1vi5l2jlec1" path="res://assests/Reset_Button.png" id="4_7mycd"]
+[ext_resource type="Texture2D" uid="uid://b285csb5hhxun" path="res://assests/Add_Minute_Button.png" id="5_272bh"]
+[ext_resource type="Texture2D" uid="uid://bt0r1tjl8tt5h" path="res://assests/Pause_Button.png" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://dmlhciekkox8s" path="res://assests/Close_Button.png" id="6_272bh"]
+[ext_resource type="AudioStream" uid="uid://bxu87xtit8htw" path="res://assests/the_cutie_pie-super-loud-ahh-alarm-165805.mp3" id="8_5vw27"]
+
+[node name="Main" type="Node2D" unique_id=1863463794]
+script = ExtResource("1_0xm2m")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1252185255]
+texture_filter = 1
+position = Vector2(25, 30)
+texture = ExtResource("1_ig7tw")
+
+[node name="CountdownTimer" type="Timer" parent="." unique_id=1909248108]
+wait_time = 60.0
+
+[node name="Label" type="Label" parent="." unique_id=891224142]
+offset_left = 9.0
+offset_top = 5.0
+offset_right = 55.0
+offset_bottom = 28.0
+text = "5:00"
+
+[node name="StartButton" type="Button" parent="." unique_id=1358431618]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 6.0
+offset_top = 34.0
+offset_right = 18.0
+offset_bottom = 46.0
+
+[node name="Sprite2D" type="Sprite2D" parent="StartButton" unique_id=1880855167]
+position = Vector2(6, 6)
+texture = ExtResource("3_lquwl")
+
+[node name="ResetButton" type="Button" parent="." unique_id=862660084]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 32.0
+offset_top = 34.0
+offset_right = 44.0
+offset_bottom = 46.0
+
+[node name="Sprite2D" type="Sprite2D" parent="ResetButton" unique_id=1723497917]
+position = Vector2(6, 6)
+texture = ExtResource("4_7mycd")
+
+[node name="AddMinuteButton" type="Button" parent="." unique_id=1176358123]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 19.0
+offset_top = 34.0
+offset_right = 31.0
+offset_bottom = 46.0
+icon_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="AddMinuteButton" unique_id=1138480289]
+position = Vector2(6, 6)
+texture = ExtResource("5_272bh")
+
+[node name="CloseButton" type="Button" parent="." unique_id=583010103]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 36.0
+offset_right = 44.0
+offset_bottom = 8.0
+
+[node name="Sprite2D" type="Sprite2D" parent="CloseButton" unique_id=2019249913]
+position = Vector2(4, 4)
+texture = ExtResource("6_272bh")
+
+[node name="PauseButton" type="Button" parent="." unique_id=140101899]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 6.0
+offset_top = 34.0
+offset_right = 18.0
+offset_bottom = 46.0
+
+[node name="Sprite2D" type="Sprite2D" parent="PauseButton" unique_id=256448192]
+position = Vector2(6, 6)
+texture = ExtResource("6_7mycd")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=656310767]
+stream = ExtResource("8_5vw27")
+
+[node name="StopAlarmButton" type="Button" parent="." unique_id=94884939]
+offset_left = 10.0
+offset_top = 48.0
+offset_right = 40.0
+offset_bottom = 56.0
